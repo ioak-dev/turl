@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 import './style.scss';
-import appnamehereWhite from '../../images/appnamehere_white.svg';
-import appnamehereBlack from '../../images/appnamehere_black.svg';
+import turlWhite from '../../images/turl_white.svg';
+import turlBlack from '../../images/turl_black.svg';
 import Links from './Links';
 import { Authorization, Profile } from '../Types/GeneralTypes';
 // import SearchBar from '../Ux/SearchBar';
@@ -50,10 +50,10 @@ const Adaptive = (props: Props) => {
     <div className="navbar">
       <div className="left">
         {!props.transparent && props.profile.theme === 'theme_light' && (
-          <img className="logo" src={appnamehereBlack} alt="Appnamehere logo" />
+          <img className="logo" src={turlBlack} alt="Turl logo" />
         )}
         {(props.transparent || props.profile.theme === 'theme_dark') && (
-          <img className="logo" src={appnamehereWhite} alt="Appnamehere logo" />
+          <img className="logo" src={turlWhite} alt="Turl logo" />
         )}
         <Links authorization={authorization} asset={props.asset} />
         {showSearchBar && <SearchBar alt />}

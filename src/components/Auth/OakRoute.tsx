@@ -56,7 +56,7 @@ const OakRoute = (props: Props) => {
     if (authorization.isAuth) {
       return true;
     }
-    const cookieKey = `appnamehere_${props.match.params.asset}`;
+    const cookieKey = `turl_${props.match.params.asset}`;
     const authKey = props.cookies.get(cookieKey);
     const baseAuthUrl = `/auth/${props.match.params.asset}`;
     if (authKey) {

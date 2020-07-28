@@ -22,7 +22,7 @@ const TokenItem = (props: Props) => {
       console.log(props.queryParam.auth_token);
 
       props.cookies.set(
-        `appnamehere_${props.asset}`,
+        `turl_${props.asset}`,
         `email ${props.queryParam.auth_token}`
       );
       props.history.push(`/${props.asset}/home`);

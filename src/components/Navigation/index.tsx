@@ -81,7 +81,7 @@ const Navigation = (props: Props) => {
     message = 'You have been logged out'
   ) => {
     dispatch(removeAuth());
-    props.cookies.remove(`appnamehere_${asset}`);
+    props.cookies.remove(`turl_${asset}`);
     sendMessage('notification', true, {
       type,
       message,

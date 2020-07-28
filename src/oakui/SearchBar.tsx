@@ -35,7 +35,7 @@ const SearchBar = (props: Props) => {
           spellCheck={false}
           autoComplete="off"
           autoFocus
-          placeholder="Appnamehere, appnamehere, on the wall, who's the fairest of them all?"
+          placeholder="Turl, turl, on the wall, who's the fairest of them all?"
           required
           value={searchText}
           onChange={handleChange}

@@ -32,7 +32,7 @@ const ExternLogin = (props: Props) => {
     });
     if (data?.newExternSession?.sessionId) {
       props.cookies.set(
-        `appnamehere_${props.asset}`,
+        `turl_${props.asset}`,
         `extern ${data?.newExternSession?.sessionId}`
       );
       props.history.push(`/${props.asset}/home`);

@@ -14,7 +14,7 @@ const OaLogin = (props: Props) => {
     if (props.location.search) {
       const query = queryString.parse(props.location.search);
       props.cookies.set(
-        `appnamehere_${query.asset}`,
+        `turl_${query.asset}`,
         `oa ${query.space} ${query.authKey}`
       );
       props.history.push(`/${query.asset}/home`);

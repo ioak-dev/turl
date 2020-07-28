@@ -20,7 +20,7 @@ const Login = (props: Props) => {
     props.history.push(`/${props.asset}/login/email`);
   };
 
-  const appnamehereLogin = () => {
+  const turlLogin = () => {
     console.log('not yet implemented');
   };
 
@@ -32,15 +32,11 @@ const Login = (props: Props) => {
           subtitle="Choose the preferred authentication method to continue"
         />
         <div className="view-asset-item">
-          <div className="space-top-3 appnamehere-signin">
+          <div className="space-top-3 turl-signin">
             <div className="login-home">
               <LoginMethod action={oaLogin} icon="blur_on" label="Oneauth" />
               <LoginMethod action={emailLogin} icon="email" label="Email" />
-              <LoginMethod
-                action={appnamehereLogin}
-                icon="people"
-                label="Native"
-              />
+              <LoginMethod action={turlLogin} icon="people" label="Native" />
             </div>
           </div>
         </div>
