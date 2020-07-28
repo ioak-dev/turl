@@ -32,18 +32,18 @@ const Home = (props: Props) => {
               data={state}
               id="url"
               handleChange={handleChange}
-              label="URL to shorten"
+              label="Source URL"
             />
             <OakText
               data={state}
               id="key"
               prefix="https://ioak.tk/"
               handleChange={handleChange}
-              label="Your preferred URL"
+              label="Generated URL"
             />
             <div className="footer-actions">
               <OakButton theme="default" variant="regular">
-                Shorten Url
+                Generate
               </OakButton>
             </div>
           </div>
