@@ -1,0 +1,166 @@
+button {
+  &.oak-button {
+    --btn-text-color: var(--color-foreground-1);
+    user-select: none;
+    border-radius: 10px;
+    // height: var(--metric-formelement-height);
+    white-space: nowrap;
+    @media (max-width: 767px) {
+      // height: var(--metric-formelement-height-mobile);
+    }
+
+    // box-shadow: 10px 10px 20px 0px #3e497c, -10px -10px 20px 0px #515fa0;
+    box-shadow: var(--neu-bs-1);
+
+    .button-label-container {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+      height: var(--metric-formelement-height);
+      line-height: var(--metric-formelement-height);
+      white-space: nowrap;
+      @media (max-width: 767px) {
+        height: var(--metric-formelement-height-mobile);
+        line-height: var(--metric-formelement-height-mobile);
+      }
+    }
+
+    // Initialize colors based on theme
+    &.default {
+      // --color-bg: var(--color-default-1);
+      // --color-bg-hover: var(--color-default-2);
+      // --bs-hover: inset 4px 4px 10px rgba(0, 0, 0, 0.7),
+      //   inset -4px -4px 10px rgba(58, 58, 58, 0.7);
+    }
+
+    &.primary {
+      --color-bg: var(--color-primary-1);
+      --color-bg-hover: var(--color-primary-2);
+      --color-bg: #886d86;
+      // --color-bg: #443232;
+      --color-bg-hover: #1a1a1a;
+      // --bs-hover: inset 8px 8px 15px rgba(0, 0, 0, 0.5),
+      //   inset -10px -10px 20px #bd99ba;
+      // --bs-hover: inset 4px 4px 10px rgba(0, 0, 0, 0.7),
+      //   inset -4px -4px 10px #ddb9da;
+    }
+
+    &.secondary {
+      --color-bg: var(--color-secondary-1);
+      --color-bg-hover: var(--color-secondary-2);
+    }
+
+    background: none;
+    outline: none;
+    color: var(--btn-text-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.25s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    position: relative;
+    overflow: hidden;
+    // z-index: 0;
+    z-index: 2;
+    border: 2px solid var(--color-bg);
+    border: none;
+
+    padding: 0 16px;
+
+    &.small {
+      padding: 0 8px;
+    }
+
+    // Slider animation defaulted to right
+
+    &.regular {
+      background-color: var(--color-bg);
+      &:hover {
+        box-shadow: var(--neu-bs-1-rev);
+      }
+
+      // &.light {
+      //   color: var(--btn-text-color);
+      // }
+    }
+
+    &.drama {
+      background-color: var(--color-default-1);
+      &:hover {
+        background-color: var(--color-bg-hover);
+      }
+    }
+
+    &.appear {
+      &:hover {
+        background-color: var(--color-bg);
+      }
+
+      &.light {
+        color: var(--btn-text-color);
+        &:hover {
+          color: var(--btn-text-color);
+        }
+      }
+    }
+
+    &.disappear {
+      background-color: var(--color-bg);
+      &:hover {
+        background-color: transparent;
+      }
+
+      &.light {
+        &:hover {
+          color: var(--btn-text-color);
+        }
+      }
+    }
+
+    &.block {
+      border: 2px solid transparent;
+      &:hover {
+        background-color: var(--color-bg);
+      }
+
+      &.light {
+        color: var(--btn-text-color);
+        &:hover {
+          color: var(--btn-text-color);
+        }
+      }
+    }
+
+    &.outline {
+      border: 2px solid transparent;
+      &:hover {
+        border: 2px solid var(--color-bg);
+      }
+
+      &.light {
+        color: var(--btn-text-color);
+      }
+    }
+
+    &.disabled {
+      opacity: 0.5;
+    }
+
+    &.icon {
+      height: 38px;
+      width: 38px;
+      border-width: 2px;
+      padding: 4px 4px;
+      border-radius: 50%;
+      .material-icons {
+        margin: 0;
+        font-size: 1.5em;
+      }
+    }
+
+    .material-icons {
+      vertical-align: middle;
+      font-size: 1.2em;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.home-page {
+  // height: calc(100vh - var(--height-nav));
+  // padding-top: calc(var(--height-nav));
+  display: grid;
+  overflow: hidden;
+  padding: 100px 0;
+
+  .home-page--container {
+    // height: calc(100vh - var(--height-nav));
+    overflow: auto;
+    display: grid;
+    margin: auto;
+    width: 60%;
+    @media (max-width: 767px) {
+      width: 95%;
+    }
+    .home-page--container--form {
+      display: grid;
+      grid-auto-flow: row;
+      row-gap: 40px;
+    }
+  }
+}
+
+.footer-actions {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+}
