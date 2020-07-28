@@ -22,7 +22,7 @@ const OakText = (props: Props) => {
     }
   };
   return (
-    <div className="oak-text-neu">
+    <div className="oak-text">
       {props.label && <label htmlFor={props.id}>{props.label}</label>}
       {!props.multiline && (
         <div className="oak-text--container">
