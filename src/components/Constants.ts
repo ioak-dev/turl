@@ -1,4 +1,5 @@
 const constants = {
+  API_URL: '/url',
   API_URL_TENANT: '/tenant',
   API_URL_TENANT_BANNER: '/tenant/banner',
   API_URL_TENANT_CREATE: '/tenant/create',
@@ -16,7 +17,7 @@ const constants = {
   API_URL_FAQ: '/faq',
   API_URL_SR: '/servicerequests',
   API_URL_USER: '/user',
-  API_URL: '/auth/',
+  // API_URL: '/auth/',
   API_SIGNIN: '/signin',
   API_SIGNUP: '/signup',
   API_KEYS: '/keys',
